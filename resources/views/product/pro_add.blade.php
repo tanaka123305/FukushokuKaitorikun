@@ -56,10 +56,10 @@
         <label for="condition">状態</label>
         <select name="condition" class="form-control" >
         <option value="">選択してください</option>
-        <option value="New" @if( old('condition') === 'New') selected @endif>新品</option>
-        <option value="Used" @if( old('condition') === 'Used') selected @endif>中古</option>
-        <option value="Slightly used" @if( old('condition') === 'Slightly used') selected @endif>やや傷・汚れあり</option>
-        <option value="Very used" @if( old('condition') === 'Very used') selected @endif>傷・汚れあり</option>
+        <option value="新品" @if( old('condition') === '新品') selected @endif>新品</option>
+        <option value="中古" @if( old('condition') === '中古') selected @endif>中古</option>
+        <option value="やや傷・汚れあり" @if( old('condition') === 'やや傷・汚れあり') selected @endif>やや傷・汚れあり</option>
+        <option value="傷・汚れあり" @if( old('condition') === 'Very 傷・汚れあり') selected @endif>傷・汚れあり</option>
         </select>
     </div>
     @error('condition')
@@ -94,9 +94,9 @@
     @enderror
 
 <!-- 戻るボタン -->
-    <button type="button" onclick="history.back()">戻る</button>
+    <button type="button" onclick="history.back()" class="btn btn-secondary mr-2">戻る</button>
 <!-- 確認画面に遷移するボタン -->
-    <button type="submit" class="btn btn-primary">確認画面へ</button>
+    <button type="submit" class="btn btn-primary ml-2">確認画面へ</button>
     </form>
 
             </div>

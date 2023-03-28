@@ -95,9 +95,9 @@
     @enderror
 
 <!-- 戻るボタン -->
-    <button type="button" onclick="history.back()">戻る</button>
+    <button type="button" onclick="history.back()" class="btn btn-secondary mr-2">戻る</button>
 <!-- 確認画面に遷移するボタン -->
-    <button type="submit" class="btn btn-primary">確認画面へ</button>
+    <button type="submit" class="btn btn-primary ml-2">確認画面へ</button>
     </form>
 
             </div>

@@ -1,0 +1,13 @@
+{
+    "ipag": {
+        "normal": "\/Applications\/MAMP\/htdocs\/\u670d\u98fe\u8cb7\u53d6\u304f\u3093\/storage\/fonts\/ipag_normal_d85a1535685e5d692cbff7b7c4f3ecf8",
+        "bold": "ipag_bold_d85a1535685e5d692cbff7b7c4f3ecf8"
+    },
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_0bce3a1192a5c345d062cfa24dece726"
+    },
+    "font awesome 5 free": {
+        "normal": "\/Applications\/MAMP\/htdocs\/\u670d\u98fe\u8cb7\u53d6\u304f\u3093\/storage\/fonts\/font_awesome_5_free_normal_80afa18578088f19c5847774cc95b047",
+        "900": "font_awesome_5_free_900_519d53697bb6883710f633f223292fab"
+    }
+}

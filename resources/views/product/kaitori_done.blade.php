@@ -8,8 +8,8 @@
     <div class="container">
         <div class="row justify-content-left">
             <div class="col-md-12">
-                <h3>商品の追加が完了しました。</h3>
-                <a href="{{ route('user_menu') }}" >メニュー画面へ</a>
+                <p class="mt-4">商品の追加が完了しました。</p>
+                <a class="btn btn-secondary mt-4" href="{{ route('user_menu') }}" >メニュー画面へ</a>
             </div>
         </div>
     </div>

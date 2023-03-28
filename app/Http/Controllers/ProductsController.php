@@ -125,7 +125,7 @@ class ProductsController extends Controller
 
     // 商品IDとログインユーザーのIDを取得して、$data変数に追加
     $data['id'] = $id;
-    $data['user_id'] = auth()->id();
+    // $data['user_id'] = auth()->id();
 
     // 商品確認画面に渡す
     return view('product.pro_edit_check', compact('data'));
@@ -138,7 +138,7 @@ class ProductsController extends Controller
     $product = \App\Models\Product::findOrFail($id);
 
     // ログインユーザーのIDを取得して、$productインスタンスにuser_idを設定
-    $product->user_id = auth()->id();
+    // $product->user_id = auth()->id();
     //値を代入
     $product->name = $request->name;
     $product->category = $request->category;

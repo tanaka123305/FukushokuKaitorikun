@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\View;
+use Barryvdh\DomPDF\Facade as PDF;
+use App\Http\Controllers\PdfOutputController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +67,19 @@ Route::middleware('auth')->group(function () {
 
     // 商品詳細画面を表示
     Route::get('/pro_disp/{id}/', 'App\Http\Controllers\ProductsController@show')->name('pro_disp');
+
+    // // 印刷処理のルート
+    // Route::get('/pdf', function () {
+    //     $data = [
+    //         'title' => 'Sample PDF Document',
+    //         'body' => 'This is a sample PDF document generated with Dompdf.'
+    //     ];
+    //     $pdf = PDF::loadView('pdf.document', $data);
+    //     return $pdf->download('document.pdf');
+    // });
+    
+    // 印刷
+    Route::post('/kaitori_pdf', 'App\Http\Controllers\PdfOutputController@output')->name('kaitori_pdf');
 
 });
 require __DIR__.'/auth.php';

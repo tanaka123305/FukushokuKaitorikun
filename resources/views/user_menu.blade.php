@@ -5,22 +5,14 @@
         </h2>
     </x-slot>
 
-    <div class="container">
-        <div>
-            <ul>
-                <li>
-                    <a href="{{ route('pro_list') }}">商品管理</a>
-                </li>
-                <li >
-                    <a href="{{ route('kaitori') }}">買取査定</a>
-                </li>
-            </ul>
-            <div>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button class="btn btn-outline-danger me-2" type="submit">ログアウト</button>
-                </form>
-            </div>
-        </div>
+<div class="container text-center">
+    <div class="d-flex flex-column align-items-center">
+        <a class="btn btn-danger btn-lg my-3" href="{{ route('kaitori') }}">買取査定</a>
+        <a class="btn btn-success btn-lg my-3" href="{{ route('pro_list') }}">商品管理</a>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button class="btn btn-secondary btn-lg my-3" type="submit">ログアウト</button>
+        </form>
     </div>
+</div>
 </x-app-layout>

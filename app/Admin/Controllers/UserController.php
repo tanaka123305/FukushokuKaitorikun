@@ -49,7 +49,6 @@ class UserController extends AdminController
 
         $form->textarea('name', __('Name'));
         $form->textarea('email', __('Email'));
-        $form->textarea('status', __('Status'));
 
         return $form;
     }

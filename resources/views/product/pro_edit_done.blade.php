@@ -9,8 +9,8 @@
         <div class="row justify-content-left">
             <div class="col-md-12">
 
-                <h2>商品の編集が完了しました。</h2>
-                <a href="{{ route('pro_list') }}" >商品一覧画面へ</a>
+                <p class="mt-4">商品の編集が完了しました。</p>
+                <a class="btn btn-secondary mt-4" href="{{ route('pro_list') }}" >商品一覧画面へ</a>
 
             </div>
         </div>
