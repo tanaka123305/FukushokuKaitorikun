@@ -13,7 +13,7 @@
                 <!--テーブル-->
                 <div class="table-responsive ">
                     <table class="table table-striped mt-4" style="width: 1000px; max-width: 0 auto;">
-                        <thead class="table-info">
+                        <thead class="thead-dark">
                             <tr>
                                 <th>ID</th>
                                 <th>商品名</th>
@@ -44,14 +44,15 @@
                     </table>
                 </div>
                 <!--/テーブル-->
+                
+                <!-- ページネーション -->
+                {!! $products->render() !!}
 
                 <div class="d-flex mt-4">
                     <a class="btn btn-secondary mr-2" href="{{ route('user_menu') }}">メニュー画面へ</a>
                     <a href="{{ route('pro_add') }}" class="btn btn-warning text-white ml-2">新規登録</a>
                 </div>
 
-                <!-- ページネーション -->
-                {!! $products->render() !!}
             </div>
         </div>
     </div>
