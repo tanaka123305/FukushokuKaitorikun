@@ -187,6 +187,22 @@ class ProductsController extends Controller
         return view('product.pro_disp', compact('product'));
     }
 
+    /**
+     * ******商品検索機能******
+     */
+    public function search(Request $request)
+    {
+        $query = $request->input('query'); // 検索キーワードを取得
+
+        $products = Product::query()
+            ->where('name', 'LIKE', "%$query%")
+            ->orWhere('category', 'LIKE', "%$query%")
+            ->orWhere('brand', 'LIKE', "%$query%")
+            ->orWhere('condition', 'LIKE', "%$query%")
+            ->get();
+
+        return view('product.pro_search', compact('products', 'query'));
+    }
 
 }
 

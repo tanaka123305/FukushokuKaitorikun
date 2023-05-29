@@ -51,6 +51,7 @@
                 <div class="d-flex mt-4">
                     <a class="btn btn-secondary mr-2" href="{{ route('user_menu') }}">メニュー画面へ</a>
                     <a href="{{ route('pro_add') }}" class="btn btn-warning text-white ml-2">新規登録</a>
+                    <a href="{{ route('pro_search') }}" class="btn btn-primary text-white ml-2">商品検索</a>
                 </div>
 
             </div>

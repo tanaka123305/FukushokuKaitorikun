@@ -81,6 +81,9 @@ Route::middleware('auth')->group(function () {
     // 印刷
     Route::post('/kaitori_pdf', 'App\Http\Controllers\PdfOutputController@output')->name('kaitori_pdf');
 
+    // 検索機能
+    Route::get('/pro_search', 'App\Http\Controllers\ProductsController@search')->name('pro_search');
+
 });
 require __DIR__.'/auth.php';
 
